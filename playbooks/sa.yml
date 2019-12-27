@@ -1,0 +1,10 @@
+---
+- hosts: dev
+  tasks:
+      - name: CREATE SA & UPDATE CRED IN TOWER
+        shell: "python /opt/python-test/sa-env/sa-23.py -e {{ env }} -k {{ service_account }} -p {{ project_name }} -a {{ user_name }} -d {{ display_name }} -c {{ cred_name }}  -i {{ cred_id }}"
+        register: sa
+
+      - name: Print output of sa
+        debug:
+          msg: "{{ sa.stdout }}"
