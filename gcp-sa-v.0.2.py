@@ -1,4 +1,4 @@
-#/usr/bin/python2.7 gcp-sa-1.py -a connector-svc-02@connector-2-250114.iam.gserviceaccount.com -k connector-3.json
+#/usr/bin/python2.7 gcp-sa-1.py -a connector-xxxxxxx -k xxxxxx.json
 import argparse
 import os
 import base64
